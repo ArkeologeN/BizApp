@@ -7,13 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 
 @interface BusinessService : NSObject
 
 @property (nonatomic, copy) NSString* caption;
 @property (nonatomic, retain) UIImage * image;
+@property (nonatomic, copy) NSString* webContentTitle;
 
--(id)initWithCaption:(NSString*)theCaption andImage:(UIImage*)theImage;
+@property (nonatomic, copy) NSString* webContent;
+
+@property (nonatomic, retain) UIImage* webContentImage;
+
+-(id)initWithCaption:(NSString*)theCaption andImage:(UIImage*)theImage andWebContentTitle:(NSString*)theTitle andWebContent:(NSString*)theWebContent andWebContentImage:(UIImage*)theWebImage;
 + (NSArray *)getSampleData;
 @end

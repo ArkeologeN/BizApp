@@ -10,7 +10,11 @@
 #import "AQGridView.h"
 
 @interface GridViewController : UIViewController <AQGridViewDelegate, AQGridViewDataSource>
-@property (nonatomic, retain) IBOutlet AQGridView *gridView;
+
+
+@property (nonatomic, retain) IBOutlet AQGridView * gridView;
+
 @property (nonatomic, retain) NSArray * services;
+
 
 @end

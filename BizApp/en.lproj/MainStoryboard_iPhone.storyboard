@@ -21,20 +21,38 @@
             </objects>
             <point key="canvasLocation" x="653" y="-138"/>
         </scene>
+        <!--Detail View Controller - Details-->
+        <scene sceneID="q7Z-bO-Emm">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAF-d5-3FA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="x0h-a4-hBU" customClass="DetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z9c-aW-awP">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Details" id="A0I-ne-d4y"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1672" y="490"/>
+        </scene>
         <!--Grid View Controller - Second-->
         <scene sceneID="13">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
                 <viewController title="Second" id="3" customClass="GridViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="17">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="6"/>
+                    <navigationItem key="navigationItem" title="Services" id="ECC-kK-iLC"/>
+                    <connections>
+                        <segue destination="x0h-a4-hBU" kind="push" identifier="detail" id="SN0-CJ-Rrf"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="653" y="498"/>
+            <point key="canvasLocation" x="1167" y="490"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="15">
@@ -49,11 +67,30 @@
                     </tabBar>
                     <connections>
                         <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
-                        <segue destination="3" kind="relationship" relationship="viewControllers" id="27"/>
+                        <segue destination="W7a-ds-TPO" kind="relationship" relationship="viewControllers" id="27"/>
                     </connections>
                 </tabBarController>
             </objects>
             <point key="canvasLocation" x="132" y="180"/>
+        </scene>
+        <!--Navigation Controller - Second-->
+        <scene sceneID="pyT-wy-FGg">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2h-s5-ZS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="W7a-ds-TPO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="96R-LZ-nmy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3" kind="relationship" relationship="rootViewController" id="8aN-2O-2Re"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="653" y="498"/>
         </scene>
     </scenes>
     <resources>
@@ -67,6 +104,9 @@
                 <relationship kind="outlet" name="dataSource"/>
                 <relationship kind="outlet" name="delegate"/>
             </relationships>
+        </class>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
         </class>
         <class className="FXLabel" superclassName="UILabel">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FXLabel.h"/>

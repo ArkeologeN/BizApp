@@ -60,6 +60,10 @@
 		4FBDAD21164AB02400586178 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBDAD20164AB02400586178 /* SecondViewController.m */; };
 		4FBDAD23164AB02400586178 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FBDAD22164AB02400586178 /* second.png */; };
 		4FBDAD25164AB02400586178 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FBDAD24164AB02400586178 /* second@2x.png */; };
+		4FED9BAF16510F4600421D7B /* DetailViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 4FED9BAD16510F4600421D7B /* DetailViewController.h */; };
+		4FED9BB016510F4600421D7B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FED9BAE16510F4600421D7B /* DetailViewController.m */; };
+		4FED9BB4165114D400421D7B /* DataModel.h in Sources */ = {isa = PBXBuildFile; fileRef = 4FED9BB2165114D300421D7B /* DataModel.h */; };
+		4FED9BB5165114D400421D7B /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FED9BB3165114D400421D7B /* DataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,6 +142,10 @@
 		4FBDAD20164AB02400586178 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		4FBDAD22164AB02400586178 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		4FBDAD24164AB02400586178 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		4FED9BAD16510F4600421D7B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		4FED9BAE16510F4600421D7B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		4FED9BB2165114D300421D7B /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = DataModel.h; sourceTree = "<group>"; };
+		4FED9BB3165114D400421D7B /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +291,10 @@
 				4F872AC9164BF8B4004DC64A /* GridViewCell.m */,
 				4F872AFB164C01B4004DC64A /* GridViewController.h */,
 				4F872AFC164C01B5004DC64A /* GridViewController.m */,
+				4FED9BAD16510F4600421D7B /* DetailViewController.h */,
+				4FED9BB2165114D300421D7B /* DataModel.h */,
+				4FED9BB3165114D400421D7B /* DataModel.m */,
+				4FED9BAE16510F4600421D7B /* DetailViewController.m */,
 				4F886B59164C2413001E3783 /* BusinessService.h */,
 				4F886B5A164C2413001E3783 /* BusinessService.m */,
 			);
@@ -410,6 +422,10 @@
 				4F872AFD164C01B5004DC64A /* GridViewController.m in Sources */,
 				4F886B5B164C2413001E3783 /* BusinessService.h in Sources */,
 				4F886B5C164C2413001E3783 /* BusinessService.m in Sources */,
+				4FED9BAF16510F4600421D7B /* DetailViewController.h in Sources */,
+				4FED9BB016510F4600421D7B /* DetailViewController.m in Sources */,
+				4FED9BB4165114D400421D7B /* DataModel.h in Sources */,
+				4FED9BB5165114D400421D7B /* DataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

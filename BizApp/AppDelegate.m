@@ -15,6 +15,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UIImage *navBarImage = [UIImage imageNamed:@"menubar.png"];
+    [[UINavigationBar appearance] setBackgroundImage:navBarImage
+                                       forBarMetrics:UIBarMetricsDefault];
+    
     return YES;
 }
 							
